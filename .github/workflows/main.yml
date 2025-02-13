@@ -19,12 +19,13 @@ jobs:
     runs-on: [ubuntu-latest]
     
     steps:
+      - name: Git clone our repository
+        uses: actions/checkout@v1
+        
       - name: Execute few commands
         run : |
           echo "Printing Global ENV variable ${{ env.DEPLOY_PACKAGE_NAME }}"
           ls -la  
-          #actions/checkout@v1
-          #ls -la
 
   my_deploy:
     runs-on: [ubuntu-latest]
