@@ -46,8 +46,8 @@ jobs:
           echo "Var1 = ${{ env.VAR1 }}"
           echo "Var2 = ${{ env.VAR2 }}"
           ls -la
-        run : aws --version
-        run : zip --version
+          aws --version
+          zip --version
       
       - name: Print super local env var
         run : echo "This is local variable $LOCAL_VAR1"
