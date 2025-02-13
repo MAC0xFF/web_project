@@ -19,17 +19,12 @@ jobs:
     runs-on: [ubuntu-latest]
     
     steps:
-      - name: Print nice message from Testing Job
-        run : echo "Hello World from Test"
-
       - name: Execute few commands
         run : |
-          echo "Hello Message1"
-          echo "Hello Message2"
           echo "Printing Global ENV variable ${{ env.DEPLOY_PACKAGE_NAME }}"
           ls -la  
-          actions/checkout@v1
-          ls -la
+          #actions/checkout@v1
+          #ls -la
 
   my_deploy:
     runs-on: [ubuntu-latest]
