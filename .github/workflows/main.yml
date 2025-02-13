@@ -40,7 +40,7 @@ jobs:
     
     steps:
       - name: Printing some more info
-        run : 
+        run : |
           echo "Hello World from Deploy"
           echo "App name is ${{ env.APPLICATION_NAME }}"
           echo "Var1 = ${{ env.VAR1 }}"
