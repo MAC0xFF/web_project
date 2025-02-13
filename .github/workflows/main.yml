@@ -41,7 +41,7 @@ jobs:
           echo "App name is ${{ env.APPLICATION_NAME }}"
           echo "Var1 = ${{ env.VAR1 }}"
           echo "Var2 = ${{ env.VAR2 }}"
-          echo "Var3 = $LOCAL_VAR1"
+          echo "Var3 = $LOCAL_VAR"
           ls -la
           aws --version
           zip --version
@@ -49,6 +49,6 @@ jobs:
       - name: Print super local env var
         run : echo "This is local variable $LOCAL_VAR1"
         env :
-          LOCAL_VAR1 : "Hello Iam local Variable"
+          LOCAL_VAR : "Hello Iam local Variable"
 
         
